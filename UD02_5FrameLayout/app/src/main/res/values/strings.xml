@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UD02_5FrameLayout</string>
+    <string name="locationTextO">Ourense</string>
+    <string name="locationTextS">Santiago</string>
+</resources>

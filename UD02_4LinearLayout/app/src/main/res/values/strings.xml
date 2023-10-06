@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UD02_4LinearLayout</string>
+    <string name="buttonText">Llamar</string>
+    <string name="nombreText">Juan Pérez</string>
+    <string name="numeroText">661 44 32 12</string>
+    <string name="llamadaText">Llamando a\u0020</string>
+</resources>
