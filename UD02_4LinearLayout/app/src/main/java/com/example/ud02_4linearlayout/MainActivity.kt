@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(layout.activity_main)
         val buttonCallAction = findViewById<Button>(id.buttonCall)
         val textLlamada = findViewById<TextView>(id.textCall)
+
         buttonCallAction.setOnClickListener {
             textLlamada.text=
                 getString(R.string.llamadaText)+findViewById<TextView>(id.nombreContacto).text.toString()

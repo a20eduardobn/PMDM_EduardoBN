@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UD02_6ConstraintLayoutPractica</string>
+    <string name="iniciarText">Iniciar Sesión</string>
+    <string name="usuarioText">Usuario</string>
+    <string name="passwdText">Contraseña</string>
+    <string name="infoUsuario">Usuario:\u0020</string>
+    <string name="infoPasswd">\u0020Contraseña:\u0020</string>
 </resources>
