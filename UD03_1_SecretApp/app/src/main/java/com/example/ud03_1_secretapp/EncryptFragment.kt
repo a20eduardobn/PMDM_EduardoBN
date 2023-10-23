@@ -13,20 +13,19 @@ class EncryptFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val message = EncryptFragmentArgs.fromBundle(requireArguments()).message.uppercase()
-        var iterationarray = message.toCharArray().iterator()
-        var messageCifrado = ""
-        while (iterationarray.hasNext()) {
-            var valorchar = iterationarray.nextChar().code + 3
-            if (valorchar > 'Z'.code) {
-                valorchar = '@'.code + (valorchar - 'Z'.code)
-            }
-            messageCifrado += valorchar.toChar()
-        }
-
+        val message = EncryptFragmentArgs.fromBundle(requireArguments()).message
+        val messageCifrado = cifrado(message)
         val view = inflater.inflate(R.layout.fragment_encrypt, container, false)
         view.findViewById<TextView>(R.id.encrypt_textValue).text = messageCifrado
         return view
     }
+
+    fun cifrado(message: String) = message.map {
+        if(it.isLetter()){
+            it.uppercaseChar().code.minus('A'.code).plus(3).mod(26).plus('A'.code).toChar()
+        }else{
+            it
+        }
+    }.joinToString("")
 
 }
