@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
         val drawerlateral = findViewById<DrawerLayout>(R.id.drawer_layout)
         builderApp.setOpenableLayout(drawerlateral)
 
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
